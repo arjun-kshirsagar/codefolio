@@ -1,0 +1,38 @@
+ /* src/Card.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .card-content {
+    margin: 20px 0;
+  }
+  
+  .card-title {
+    color: #444;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card-number {
+    color: black;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  

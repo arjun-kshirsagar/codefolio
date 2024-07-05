@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+// src/App.js
+
+
 import './App.css';
+import CompetitiveProgramming from './components/CompetitiveProgramming/CompetitiveProgramming';
+import ContestStats from './components/ConetstStats/ContestStats';
+import ProfileCard from './components/ProfileCard/ProfileCard';
+import RatingChart from './components/RatingChart/RatingChart';
+import SolvedProblems from './components/SolvedProblems/SolvedProblems';
+import StatCard from './components/StatCard/StatCard';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="dashboard">
+      <ProfileCard />
+      <div className="stats-container">
+        <StatCard title="Total Questions" value={803} />
+        <StatCard title="Total Active Days" value={307} />
+      </div>
+      <div className="middle-section">
+        <ContestStats />
+        <RatingChart />
+      </div>
+      <div className="bottom-section">
+        <SolvedProblems />
+        <CompetitiveProgramming />
+      </div>
     </div>
   );
 }
